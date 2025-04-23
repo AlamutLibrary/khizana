@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismaili Studies Resources ONE </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            overflow-x: hidden;
+        }
+        
+        /* Left Sidebar */
+        .sidebar-left {
+            width: 50px;
+            background-color: #f8f9fa;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            overflow: hidden;
+            transition: width 0.3s ease;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        .sidebar-left:hover {
+            width: 250px;
+        }
+        
+        .sidebar-content {
+            width: 250px;
+            padding: 20px;
+        }
+        
+        .sidebar-left ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .sidebar-left li {
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+        
+        .sidebar-left a {
+            color: #2c3e50;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        
+        .sidebar-left a:hover {
+            color: #3498db;
+        }
+        
+        .sidebar-icon {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        
+        /* Right Sidebar */
+        .sidebar-right {
+            width: 50px;
+            background-color: #f8f9fa;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            overflow: hidden;
+            transition: width 0.3s ease;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        .sidebar-right:hover {
+            width: 250px;
+        }
+        
+        .sidebar-right-content {
+            width: 250px;
+            padding: 20px;
+            margin-left: auto;
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 20px;
+            max-width: calc(100% - 100px);
+            transition: margin 0.3s ease;
+        }
+        
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        h2:after {
+            content: "▼";
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        
+        h2.collapsed:after {
+            content: "►";
+        }
+        
+        h3 {
+            color: #2980b9;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        h3:after {
+            content: "▼";
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        
+        h3.collapsed:after {
+            content: "►";
+        }
+        
+        h4 {
+            color: #16a085;
+        }
+        
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-content {
+            display: block;
+        }
+        
+        .section-content.collapsed {
+            display: none;
+        }
+        
+        .resource {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .resource-title {
+            font-weight: bold;
+        }
+        
+        .resource-details {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .resource-info {
+            margin-top: 5px;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar-left">
+        <div class="sidebar-content">
+            <div class="sidebar-icon">≡</div>
+            <h3 style="margin-top: 0;">Contents</h3>
+            <ul>
+                <li><a href="#essential-texts">Essential Texts</a></li>
+                <li><a href="#libraries">Libraries and Repositories</a></li>
+                <li><a href="#journals">Academic Journals</a></li>
+                <li><a href="#video-archives">Video Archives</a></li>
+                <li><a href="#general-resources">General Resources</a></li>
+                <li><a href="#archives-manuscripts">Archives and Manuscripts</a></li>
+                <li><a href="#institutional">Institutional Websites</a></li>
+                <li><a href="#community">Community Websites</a></li>
+                <li><a href="#encyclopaedias">Encyclopaedias</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#video-photo">Video and Photo Archive</a></li>
+                <li><a href="#modern-communities">Modern Communities</a></li>
+                <li><a href="#architecture">Architecture and Art</a></li>
+                <li><a href="#digital-humanities">Digital Humanities</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Ismaili Studies Resources</h1>
+            <p>The purpose of this site is to collect and share resources for Ismaili Studies in one place for the benefit of the students and scholars of Ismaili history and societies. Digital and archival materials of relevance to Ismaili studies are vast, and thus not easy to navigate for novice and expert alike. It is hoped that this page will be useful in locating primary sources, manuscripts and documents, coins and objects, academic literature and new media, as well as digital tools of analysis. The reader we have in mind is anyone interested in the subject. Contributions are welcome.</p>
+            <p>There are many other websites, online guides and other similar tools that help to navigate the broader fields which include Ismaili studies, such as Islamic Studies. Links to many of these will be given. Links to other major sources such Encylopaedia Islamica will also be given, but the goal is to bring together specialist resources that go under the radar of everyone else.</p>
+        </header>
+
+        <div class="section" id="essential-texts">
+            <h2>Essential Texts on Bibliography and Survival of Material</h2>
+            <div class="section-content">
+                <div class="resource">
+                    <div class="resource-title">
+                        <a href="https://www.sciencedirect.com/org/science/article/pii/S2666627821000220#FN000010" target="_blank">
+                            Olly Okkerman: 'The Bohras as Neo-Fāṭimids: Documentary Remains of a Fāṭimid Past in Gujarat'
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="libraries">
+            <h2>Libraries and Digital Repositories</h2>
+            <div class="section-content">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+
+        <div class="section" id="journals">
+            <h2>Academic Journals</h2>
+            <div class="section-content">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+
+        <div class="section" id="video-archives">
+            <h2>Video Archives</h2>
+            <div class="section-content">
+                <div class="resource">
+                    <div class="resource-title">
+                        <a href="https://www.youtube.com/playlist?list=PLlcpfFDgYQtq0B7u2rZ5EuSTuZ0sLJ1G4" target="_blank">
+                            Islamic History and Thought Lecture Series on Youtube (IIS)
+                        </a>
+                    </div>
+                    <div class="resource-details">
+                        Convened by Fares Gillion and Orkhan Mir-Kasimov on a broad range of topics, but the videos posted online tend to be within Shiʿi intellectual history.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="general-resources">
+            <h2>General Resources and Tools</h2>
+            <div class="section-content">
+                <div class="resource">
+                    <div class="resource-title">
+                        <a href="https://idhn.org/resources/" target="_blank">IDHN compilation</a>
+                    </div>
+                    <div class="resource-details">
+                        A good list of databases and electronic resources of mainly texts and other media for Islamic-ate Studies
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">
+                        <a href="https://idhn.org/resources/" target="_blank">A Digital Toolbox for Iranian Studies</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">
+                        <a href="http://kohepocu.cchs.csic.es/flipbooks/2.2/mobile/index.html#p=1" target="_blank">CSIC List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="archives-manuscripts">
+            <h2>Archives and Manuscripts</h2>
+            <div class="section-content">
+                <h3>Manuscript Collections</h3>
+                <div class="section-content">
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://www.iis.ac.uk/research/ismaili-special-collections/" target="_blank">IIS Special Collections</a>
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://www.agakhanlibrary.digital/collections/96be59df-aad6-46b2-94c2-f4bd010724c5" target="_blank">
+                                Ismaili Printed Material Collections (Aga Khan Library, Rare Books and Manuscripts)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://www.yahiabaiza.info/persian-ismaili-manuscripts" target="_blank">
+                                Yahya Baiza, Persian Ismaili Manuscripts
+                            </a>
+                            and his personal website 
+                            <a href="https://www.yahiabaiza.info/" target="_blank">https://www.yahiabaiza.info/</a>
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://dpul.princeton.edu/badakhshan_collection" target="_blank">
+                                Badakhshan Genealogical Document Collection: Transforming rare texts into accessible digital resources
+                            </a>
+                        </div>
+                        <div class="resource-details">
+                            <strong>Archive:</strong> Princeton University Library<br>
+                            <strong>Person:</strong> Daniel Beben, Jo-Ann Gross and Umed Mamadsherzodshoev<br>
+                            <strong>Access:</strong> Online open access<br>
+                            <strong>Details:</strong> 64 nasabnāmah<br>
+                            <strong>Info:</strong> "Using an archive of photographs compiled during Dr. Gross' 2004-2019 field research in the region, it is the first effort to make available the history of genealogical documentation in the Ismaili community as a source for local knowledge of the Ismaili tradition of Badakhshan."
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://od-portal.hypotheses.org/3672" target="_blank">
+                                Ismaili manuscripts at the University of Tubingen (42 mss)
+                            </a>
+                        </div>
+                        <div class="resource-details">
+                            V> Klemm documents the history of the Tubingen manuscript
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://digital.bodleian.ox.ac.uk/objects/748a9d50-5a3a-440e-ab9d-567dd68b6abb/surfaces/d6fc79a9-a87a-48cb-aebe-edd36c2158c6/" target="_blank">
+                                The Lost map of the caliph or a unique manuscript with maps from the Fatimid period in OpenAccess - <em>Kitāb Gharāʼib al-funūn wa-mulaḥ al-ʻuyūn (كتاب غرائب الفنون وملح العيون)</em>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Geniza Archive</h3>
+                <div class="section-content">
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://cudl.lib.cam.ac.uk/collections/genizah/1" target="_blank">
+                                Cairo Geniza Cambridge University Library
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resource">
+                        <div class="resource-title">
+                            <a href="https://www.nationalarchives.gov.uk/" target="_blank">
+                                The National Archives UK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
